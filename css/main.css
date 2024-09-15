@@ -1,0 +1,122 @@
+canvas {
+    display: block;
+    vertical-align: bottom;
+    background: linear-gradient(45deg, 
+        #a0d2eb,  /* Cold Blue */
+        #e5eaf5,  /* Freeze Purple */
+        #d0bdf4,  /* Medium Purple */
+        #8458B3,  /* Purple Pain */
+        #a28089   /* Heavy Purple */
+    );
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image {
+    border-radius: 50%;
+}
+
+.header1 {
+    font-family: 'Righteous', cursive;
+    font-size: 4vw;
+}
+
+.header2 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1.4vw;
+}
+
+.header3 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2.2vw;
+}
+
+.link1 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 2.8vw;
+    color: inherit;
+    margin: 0px 5px 0px 5px;
+    transition: 0.5s;
+}
+
+.link1:hover {
+    color: #fc7a00;
+}
+
+.walkthrough-btn-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -100px; /* Shift slightly to the left */
+}
+
+.walkthrough-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 1.5vw;
+    color: white;
+    font-family: 'Righteous', cursive;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.walkthrough-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fc7a00;
+    box-shadow: 0 6px 35px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 785px) {
+    .header1 {
+        font-size: 8vw;
+    }
+    .link1 {
+        font-size: 4vw;
+    }
+    .walkthrough-btn {
+        font-size: 3vw;
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    body {
+        text-align: center;
+    }
+    .header1 {
+        font-size: 9vw;
+    }
+    .header2 {
+        font-size: 2.5vw;
+    }
+    .link1 {
+        font-size: 5vw;
+    }
+    .walkthrough-btn {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 1390px) {
+    .header2 {
+        font-size: 1.1vw;
+    }
+    .walkthrough-btn {
+        font-size: 1.2vw;
+    }
+}
