@@ -27,9 +27,22 @@ canvas {
     border-radius: 50%;
 }
 
+/* Logo Container Flexbox */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-container p,
+.logo-container img {
+    margin: 5px;
+}
+
 .header1 {
     font-family: 'Righteous', cursive;
-    font-size: 4vw;
+    font-size: 1.5vw;
 }
 
 .header2 {
@@ -81,6 +94,7 @@ canvas {
     border-color: rgba(255, 255, 255, 0.6);
 }
 
+/* Media Queries for responsive design */
 @media screen and (max-width: 785px) {
     .header1 {
         font-size: 8vw;
